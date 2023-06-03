@@ -16,6 +16,10 @@ function createNotification() {
    notif.innerText = getRandomMessage();
 
    toasts.appendChild(notif)
+
+   setTimeout(() => {
+    notif.remove()
+   }, 3000)
 }
 
 function getRandomMessage() {
